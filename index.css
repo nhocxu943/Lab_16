@@ -1,0 +1,270 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.container {
+  width: auto;
+  margin: 0 auto;
+  background-color: white;
+  display: block;
+  justify-self: center;
+  align-items: center;
+  position: relative;
+}
+.container header {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+.container header .top-right {
+  width: 300px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: orangered;
+  border-bottom-left-radius: 30px;
+  text-align: center;
+  font-variant: small-caps;
+}
+.container header .top-right a {
+  text-decoration: none;
+  color: white;
+  line-height: 40px;
+  padding: 5px;
+}
+.container header .top-right a:hover {
+  text-decoration: underline;
+  color: blue;
+  line-height: 40px;
+  font-weight: bold;
+}
+.container header .company-info {
+  width: 300px;
+  height: 80px;
+  /* background-color: aqua;*/
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  text-align: center;
+}
+
+.container header .company-info h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 38px;
+  color: white;
+  text-shadow: 0 0 5px orangered;
+  border-bottom: 1px dotted orangered;
+  font-variant: small-caps;
+}
+.container header .company-info h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  color: orangered;
+  font-variant: small-caps;
+}
+
+.container head img {
+  width: 100%;
+  height: auto;
+}
+
+.container nav {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: orangered;
+  color: white;
+  /*text-align: center;*/
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container nav .menu-left {
+  margin-left: 10px;
+}
+.container nav .menu-right {
+  margin-right: 10px;
+}
+.container nav a {
+  color: white;
+  font-variant: small-caps;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.container nav a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.container article {
+  width: 75%;
+  height: 580px;
+  float: left;
+  background-color: white;
+  box-shadow: 0 0 5px rgb(162, 0, 255);
+}
+
+.container aside {
+  width: 25%;
+  height: 400px;
+  float: right;
+  background-color: white;
+}
+
+.container footer {
+  width: 100%;
+  height: 150px;
+  clear: both;
+  border-top: 5px double orangered;
+  border-top: 5px double orangered;
+  line-height: 50px;
+  background-color: lightcyan;
+  text-align: center;
+  font-variant: small-caps;
+  clear: both;
+}
+iframe [name="page"] {
+  width: 100%;
+  min-height: 400px;
+}
+
+/*----------------------*/
+
+.col-25 {
+  width: 25%;
+  float: left;
+  padding: auto;
+}
+
+.prod {
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgb(112, 107, 107);
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.prod > .name {
+  font-size: 20px;
+  font-variant: small-caps;
+  color: orangered;
+}
+
+.prod > .image {
+  max-width: 98%;
+  height: 150px;
+  margin-top: 10px;
+}
+
+.prod > .price {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  font-family: impact;
+  font-size: 25px;
+  color: red;
+}
+
+.prod > .icons {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  width: 25px;
+}
+
+.prod > .new-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.vmenu a{
+  background: url('img/1.jpg') no-repeat 1px center;
+  display: block;
+  border-bottom: 1px dotted orangered;
+  color: orangered;
+  font-variant: small-caps;
+  font-size: larger;
+  text-decoration: none;
+  padding: 8px 5px 8px 30px;
+}
+
+.vmenu a:hover{
+  background: url('img/daquy.png') no-repeat 10px center;
+  border-bottom: 1px dotted white;
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+}
+
+
+.menu>ul>li{
+  display:inline-block;
+  position:relative;
+}
+
+.menu>ul>li>a{
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: large;
+  color: white;
+  padding: 0 10px;
+  line-height: 40px;
+}
+
+.menu>ul{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  border-radius: 3px;
+  background-color: orangered;
+  text-align: center;
+}
+
+
+.menu>ul>li>a:hover{
+  color:yellow;
+}
+
+.menu ul ul a{
+  display:block;
+  line-height: 30px;
+  color: orangered;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: large;
+  padding: 0 10px;
+}
+
+.menu ul ul{
+  position: absolute;
+  display: none;
+}
+
+.menu>ul>li:hover>ul{
+  display:block;
+} 
+
+.menu ul ul{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  border-radius: 3px;
+  width: 200px;
+  background-color: white;
+  box-shadow: 0 0 1px gray;
+}
+
+.menu ul ul a:hover{
+  background-color: orangered;
+  color: white;
+}

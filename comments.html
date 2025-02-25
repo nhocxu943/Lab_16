@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .feedback {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.feedback h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+    </style>
+</head>
+<body>
+    <section class="feedback">
+        <h2>Góp ý của bạn</h2>
+        <form action="mailto:email@example.com" method="post" enctype="text/plain">
+            <label for="name">Họ và Tên:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email của bạn:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Nội dung góp ý:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <button type="submit">Gửi góp ý</button>
+        </form>
+    </section>
+    
+</body>
+</html>
